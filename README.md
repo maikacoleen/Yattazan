@@ -1,2 +1,2 @@
-# Yatazan
- Yatazan English School Website
+# Yattazan
+ Yattazan English School Website
