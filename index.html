@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <title>Yattazan</title>
   <!-- font awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -13,6 +15,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
+  <link rel=icon href="images/favicon.png">
 
 </head>
 
@@ -33,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link menu-custom" href="#titl">ホーム</a>
+              <a class="nav-link menu-custom" href="#title">ホーム</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-custom" href="#class-menu">クラス案内</a>
@@ -45,7 +49,8 @@
               <a class="nav-link menu-custom" href="#price">料金</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link menu-custom" href="classes.html#gallery">ギャラリー</a>
+              <!-- <a class="nav-link menu-custom" href="gallery.html#gallery">ギャラリー</a> -->
+              <a class="nav-link menu-custom" href="https://photos.app.goo.gl/hCfduB86QaH7GQHi7">ギャラリー</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menu-custom" href="#translation">翻訳業務</a>
@@ -54,24 +59,31 @@
               <a class="nav-link menu-custom" href="http://yattazan-blog.a-chi-plan.com/" target="_blank">Blog</a>
             </li> -->
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-dark"><i class="fas fa-envelope icon"></i> お問い合せ</button>
+              <a type="button" class="btn btn-outline-dark" href="https://forms.gle/NN5zupdCQdYM2sWKA"><i class="fas fa-envelope icon"></i> お問い合せ</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="row">
+      
+      <div class="container-fluid">
+
+        <h1 class="schooltitle">八田山英語学院</h1>
+        <p class="schooldescript"><i>小さな教室から大きな夢に向かって</i></p>
+        <p class="year">Since 1994</p>
+      </div>
+      <!-- <div class="row">
         <div class="col-lg-6">
           <h1 class="schooltitle">Yatazan English School</h1>
-          <!-- <h1 class="schooltitle">八田山英語学院</h1> -->
           <p class="schooldescript">"Small but Powerful"</p>
           <p class="year">Since 1994</p>
         </div>
         <div class="col-lg-6">
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- </div> -->
   </section>
+
 
   <!-- About Us Page -->
   <section class="fill" id="about">
@@ -92,33 +104,28 @@
     <div class="container-fluid info-box">
       <h1><i class="fas fa-newspaper"></i> Yattazan ニュース <i class="fas fa-newspaper"></i></h1>
       <div id="medium-widget"></div>
-      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-      <script>
-        MediumWidget.Init({
-          renderTo: '#medium-widget',
-          params: {
-            "resource": "https://medium.com/neo-smart-economy",
-            "postsPerLine": 3,
-            "limit": 6,
-            "picture": "big",
-            "fields": ["description", "author", "publishAt"],
-            "ratio": "landscape"
-          }
-        })
-      </script>
-
-      <!-- <div id="retainable-rss-embed" data-rss="https://medium.com/feed/neo-smart-economy" data-maxcols="3" data-layout="grid" data-poststyle="inline" data-readmore="Read the rest" data-buttonclass="btn btn-primary" data-offset="-100"></div> -->
-      <!-- <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at tempor. Nisi scelerisque eu ultrices vitae auctor eu augue ut.
-        Integer feugiat scelerisque varius morbi enim nunc. Ipsum dolor sit amet consectetur adipiscing. Sed turpis tincidunt id aliquet risus feugiat in ante.</p> -->
-
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>
+      MediumWidget.Init({
+        renderTo: '#medium-widget', 
+        params: {
+          "resource":"https://medium.com/@yattazanenglishschool",
+          "postsPerLine":3,
+          "limit":6,
+          "picture":"big",
+          "fields":["description","author","claps","publishAt"],
+          "ratio":"landscape"
+        }
+      })
+    </script>
     </div>
   </section>
 
   <!-- Student Achievments -->
   <section id="achievments">
     <div class="container-fluid achieve">
-      <h1>生徒達の実績</h1>
-      <h2><i class="eikentitle fas fa-crown crown-color"></i> ２０２０年度　検定試験合格者 <i class="fas fa-crown crown-color"></i></h2>
+      <h1>生徒達の実績（２０２０年度）</h1>
+      <h2><i class="eikentitle fas fa-crown crown-color"></i> 検定試験合格者 <i class="fas fa-crown crown-color"></i></h2>
       <div class="row">
         <div class="col-sm">
           <div class="card card-a">
@@ -289,7 +296,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <h2><i class="upgrad fas fa-crown crown-color"></i> ２０２０年度　大学合格者 <i class="fas fa-crown crown-color"></i></h2>
+          <h2><i class="upgrad fas fa-crown crown-color"></i> 大学合格者 <i class="fas fa-crown crown-color"></i></h2>
           <div class="card card-b">
             <div class="card-b-body">
               <h3 class="number-b-people">合格者７名</h3>
@@ -307,7 +314,7 @@
           </div>
         </div>
         <div class="col">
-          <h2><i class="upgrad fas fa-crown crown-color"></i> ２０２０年度　高等学校合格者 <i class="fas fa-crown crown-color"></i></h2>
+          <h2><i class="upgrad fas fa-crown crown-color"></i> 高等学校合格者 <i class="fas fa-crown crown-color"></i></h2>
           <div class="card card-b">
             <div class="card-b-body">
               <h3 class="number-b-people">合格者１３名</h3>
@@ -449,7 +456,7 @@
       <div id="Otherlesson" class="tabcontent" style="display:none">
         <h2>その他のレッスン</h2>
         <hr>
-        <img class="lesson-img" src="images/sonota.png" alt="sonota-class-img">
+        <img class="lesson-img" src="images/sonota2.png" alt="sonota-class-img">
         <p class="menu-text">高校入試対策・センター試験対策・英検直前対策・英検2次試験対策・留学直前対策など、 短期のレッスンも受け付けます。お気軽に ご相談ください。</p>
       </div>
     </div>
@@ -950,7 +957,7 @@
       <p>月曜日〜土曜日　(insert time here)</p>
       <hr>
       <a class="ft-details" href="tel:0988743339"><i class="fas fa-phone icon"></i> 098-874-3339</a>
-      <a class="ft-details" href="mailto:yattazan@yahoo.co.jp"><i class="fas fa-envelope icon"></i> お問い合せ</a>
+      <a class="ft-details" href="https://forms.gle/NN5zupdCQdYM2sWKA"><i class="fas fa-envelope icon"></i> お問い合せ</a>
       <a class="ft-details" href="https://goo.gl/maps/FjoU5BAECPhTSnX67"><i class="fas fa-map-marker-alt icon"></i> 沖縄県浦添市城間4-42-10</a>
       <hr class="invisible-line">
       <!-- <a class="ft-details" href="tel:0988743339"><i class="fas fa-phone icon"></i> 098-874-3339</a>
@@ -960,7 +967,7 @@
     </div>
 
     <div class="copyright-section">
-      <p class="footer-note">© Copyright 2020 Yattazan English School</p>
+      <p class="footer-note">© Copyright 2021 八田山英語学院</p>
     </div>
   </footer>
 
