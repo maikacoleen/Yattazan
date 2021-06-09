@@ -1,12 +1,13 @@
 #title{
-  background-image: url("../images/cover4.png");
+  background-image: url("../images/cover-title.png");
   /* background-image: url("../images/englishclass.jpg"); */
   background-size: cover;
   height: 100vh;
 }
 
 .schooltitle{
-  margin-top:13rem;
+  /* margin-top:10rem; */
+  padding-top: 10rem;
   text-shadow: 3px 3px #bbbfca;
   font-weight: 600;
   font-size: 4rem;
