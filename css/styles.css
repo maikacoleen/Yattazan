@@ -214,7 +214,7 @@ h1{
 #reviews{
   background-color: #ffa45b;
   /* background-image: url("../images/testingimg.png"); */
-  
+
 }
 
 /* .review-style{
@@ -246,11 +246,11 @@ h1{
 #class-menu{
   /* background-image: url("../images/school background.png"); */
   background-color: #aee6e6;
-  
+
   height: 60rem;
   padding-right: 80px;
 
-  
+
 }
 
 .class-title{
@@ -260,7 +260,7 @@ h1{
   /* height: 20em; */
   background-color: #aee6e6;
   margin-bottom: 0px;
-  
+
 }
 
 .menu-text{
@@ -331,12 +331,20 @@ h1{
   color: #ffa45b;
 }
 
+.translation-heading{
+  padding-top: 10%;
+}
+
 
 
 /* footer */
 .footer-note{
   text-align: center;
 
+}
+
+.time-detail{
+  margin-bottom: 0;
 }
 
 .ft-details{
@@ -372,7 +380,7 @@ h1{
 }
 
 .lightBox{
-  max-height: 700; 
+  max-height: 700;
   max-width: 700;
 }
 
