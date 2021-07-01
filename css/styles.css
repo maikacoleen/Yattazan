@@ -13,7 +13,7 @@ body {
 
 .schooltitle{
   padding-top: 10rem;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   text-shadow: 4px 4px #D7EEF2;
   font-weight: 500;
   font-size: 7rem;
@@ -22,9 +22,9 @@ body {
 
 .schooldescript{
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-  padding: 10px 80px 10px 80px;
+  padding: 0 80px 0 80px;
   /* color:#ffa45b; */
 }
 
@@ -266,7 +266,7 @@ h1{
 .menu-text{
   /* text-align: left; */
   font-weight: 500;
-  font-size: 110%;
+  font-size: 120%;
 
 }
 
