@@ -8,7 +8,12 @@ body {
   /* background-image: url("../images/englishclass.jpg"); */
   background-size: cover;
   background-repeat:no-repeat;
+  background-position: center;
   height: 100vh;
+}
+
+rt{
+  font-size: 30px;
 }
 
 .schooltitle{
@@ -16,7 +21,7 @@ body {
   padding-bottom: 10px;
   text-shadow: 4px 4px #D7EEF2;
   font-weight: 500;
-  font-size: 7rem;
+  font-size: 6rem;
 
 }
 
