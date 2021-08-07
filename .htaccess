@@ -1,4 +1,1 @@
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www.yattazan.one [NC]
-RewriteRule ^(.*)$ http://yattazan.one/$1 [L,R=301]
+Directory Index index.html
