@@ -1,1 +1,4 @@
-Directory Index index.html
+Options +Indexes
+IndexOptions FancyIndexing
+
+IndexIgnore *.php
