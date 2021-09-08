@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat:no-repeat;
   height: 100vh;
+  background-position: center;
 }
 
 rt{
@@ -23,6 +24,10 @@ rt{
   font-size: 6rem;
 
 }
+
+/* .furigana{
+  font-size: 50%;
+} */
 
 .schooldescript{
   text-align: center;
@@ -95,6 +100,8 @@ rt{
   background-size: 100px;
 }
 
+
+/* News */
 #news-info{
 
   background-color: #ffda77;
@@ -105,7 +112,21 @@ rt{
 
 }
 
+#medium-widget{
+  display: auto;
+}
+
+#medium-widget-mobile{
+  display: none;
+}
+
+
 .info-box{
+  padding: 5% 10% 10% 10%;
+  text-align: center;
+}
+
+.info-box-news{
   padding: 5% 10% 10% 10%;
   text-align: center;
 }
@@ -131,9 +152,8 @@ h1{
 }
 
 
-
 /* Student Achievements */
-#achievments{
+#achievements{
     /* background-image: url("../images/colored shapes.png"); */
     background-color:#bedbbb;
     padding-bottom: 60px;
@@ -168,10 +188,8 @@ h1{
 }
 
 .card-a{
-  width: 100%;
   height: 300px;
-  margin: 30px auto;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .card-b-body{
@@ -180,10 +198,8 @@ h1{
 }
 
 .card-b{
-  width: 100%;
   height: 250px;
-  margin: 30px auto;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .number-b-people{
@@ -191,13 +207,9 @@ h1{
 }
 
 .scrollable{
-  margin: 20px auto;
+  margin: auto;
   overflow-y: auto;
-  max-height: 160px;
-}
-
-.scroll-body{
-  height: 150px;
+  max-height: 180px;
 }
 
 .crown-color{
@@ -238,7 +250,7 @@ h1{
 .review-img{
   width: 5%;
   border-radius: 100%;
-  margin: 20px;
+  margin: 20px 10px 20px 0px;
 }
 
 .carousel-item{
@@ -251,8 +263,8 @@ h1{
   /* background-image: url("../images/school background.png"); */
   background-color: #aee6e6;
 
-  height: 60rem;
-  padding-right: 80px;
+  height: 44rem;
+  /* padding-right: 80px; */
 
 
 }
@@ -261,8 +273,6 @@ h1{
   padding-top: 8rem;
   padding-bottom: 5rem;
   text-align: center;
-  /* height: 20em; */
-  background-color: #aee6e6;
   margin-bottom: 0px;
 
 }
@@ -408,11 +418,15 @@ h1{
   height: 500px;
 }
 
+.tab-mobile{
+  display: none;
+}
+
 .tablinks{
   border:none;
   background-color: inherit;
   font-weight: 500;
-  font-size: 110%;
+  font-size: 95%;
 }
 
 
@@ -429,15 +443,18 @@ h1{
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
+.tab button:active {
+  color: #ffa45b;
+}
+
 .tab button:hover {
   color: #ffa45b;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
+.tab button:focus {
   color: #ffa45b;
 }
+
 
 /* Style the tab content */
 .tabcontent {
@@ -680,12 +697,17 @@ h1{
 	-o-transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
 }
+
+#generic_price_table .generic_content{
+  margin-bottom:20px;
+}
+
 @media (max-width: 320px) {
 }
 
 @media (max-width: 767px) {
 	#generic_price_table .generic_content{
-		margin-bottom:75px;
+		margin-bottom:20px;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -700,7 +722,7 @@ h1{
 	}
 
 	#generic_price_table .generic_content{
-		margin-bottom:75px;
+		margin-bottom:20px;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -868,3 +890,200 @@ h1{
 	color: #FFF;
 	text-decoration:none;
 }
+
+@media only screen and (max-width: 1526px) {
+  .schooltitle{
+    padding: 110px 0px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  /* Cover */
+  #title{
+    background-image: url("../images/cover-mobile.png");
+  }
+
+  .schooltitle{
+    text-shadow: 2px 2px #D7EEF2;
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding: 110px 0px 10px 0px;
+  }
+
+  .furigana{
+    font-size: 50%;
+  }
+
+  .schooldescript{
+    font-size: 150%;
+    padding: 4px 5px 4px 5px;
+  }
+  
+  /* Background Images */
+  #about{
+    background-image: none
+  }
+
+  #news-info{
+    background-image: none
+  }
+
+  #achievements{
+    background-image: none
+  }
+
+  #translation{
+    background-image: none
+  }
+
+  #price{
+    background-image: none
+  }
+
+  /* Container Text */
+  .info-box{
+    padding: 20px 5px 20px 5px;
+  }
+
+  .container-title{
+    font-size: 200%;
+    font-style: bold;
+  }
+
+  .info-text{
+    font-size: 120%;
+  }
+
+  .thick{
+    font-size: 150%;
+  }
+
+  /* News */
+  .info-box-news{
+    padding: 20px 15px 20px 15px;
+  }
+
+  #medium-widget{
+    display: none;
+  }
+
+  #medium-widget-mobile{
+    display: initial;
+  }
+
+  /* Achievements */
+  .achieve{
+    padding: 10px 0px 10px 0px;
+    width: 100%
+  }
+
+  .achievements-title{
+    font-size: 200%;
+  }
+
+  .card-title{
+    font-size: 30px
+  }
+
+  /* Reviews */
+  .carousel{
+    padding: 40px 50px 40px 50px;
+  }
+
+  .review-text{
+    font-size: 100%;
+  }
+
+  .review-img{
+    margin: auto;
+  }
+
+  .reviewer{
+    font-size: 14px;
+  }
+
+  /* Classes */
+  /* .class-menu{
+    padding: none;
+  }
+
+  .tab button{
+    font-size: 70%;
+    padding: 1px, 1px, 1px, 1px;
+  }
+
+  .tabcontent{
+    padding: 0px, 10px;
+    width: 100%;
+  } */
+
+  .tab-class-title{
+    font-size: 150%;
+  }
+
+  .menu-text{
+    font-size: 100%;
+  }
+
+  .lesson-img{
+    width: 100%;
+    height: auto;
+
+  }
+
+  /* Style the tab */
+  .tab {
+    display: none;
+  }
+
+  .tab-mobile{
+    display: initial;
+    float: left;
+    width: 20%;
+    height: 500px;
+  }
+
+
+  /* Style the buttons that are used to open the tab content */
+  .tab-mobile button {
+    display: block;
+    color: black;
+    padding: 10px 10px 10px 0;
+    width: 100%;
+    border-right: solid;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .tab-mobile button:active {
+    color: #ffa45b;
+  }
+
+  .tab-mobile button:hover {
+    color: #ffa45b;
+  }
+
+  .tab-mobile button:focus {
+    color: #ffa45b;
+  }
+
+
+  /* Style the tab content */
+  .tabcontent {
+    background-color: #aee6e6;
+    float: left;
+    text-align: left;
+    padding: 0 10px;
+    width: 80%;
+    height: 500px;
+  }
+
+  /* Translation */
+  .translation-menu{
+    font-size: 130%
+  }
+
+}
+  

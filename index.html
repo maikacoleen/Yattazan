@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>八田山英語学院</title>
-  <!-- font awesome -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -79,8 +79,12 @@
 
         <h1 class="schooltitle">
           <ruby>
-            <rb>八田山</rb>
-            <rt>やったざん</rt>
+            <rb>八</rb>
+            <rt class="furigana">やっ</rt>
+            <rb>田</rb>
+            <rt class="furigana">た</rt>
+            <rb>山</rb>
+            <rt class="furigana">ざん</rt>
           </ruby>英語学院
         </h1>
         <p class="schooldescript"><i>小さな教室から大きな夢に向かって</i></p>
@@ -103,7 +107,7 @@
   <!-- About Us Page -->
   <section class="fill" id="about">
     <div class="container-fluid info-box">
-      <h1>八田山英語学院について</h1>
+      <h1 class="container-title">八田山英語学院について</h1>
       <p class="info-text">国際語である英語をできるだけ多くの人々に、そしてできるだけ低料金で学んでいただきたいという思いで八田山英語学院は1994年に開校しました。</p>
       <p class="info-text">開校当初からレッスン料は一度も変更せず、これまで子供から大人まで多くの方に出会い続けています。</p>
       <h3 class="thick">無限の将来性で目を輝かせている子供たち</h3>
@@ -116,38 +120,33 @@
 
   <!-- News/Blogs -->
   <section id="news-info">
-    <div class="container-fluid info-box">
-      <h1><i class="fas fa-newspaper"></i> Yattazan ニュース <i class="fas fa-newspaper"></i></h1>
-      <div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>
-      MediumWidget.Init({
-        renderTo: '#medium-widget',
-        params: {
-          "resource":"https://medium.com/@yattazanenglishschool",
-          "postsPerLine":3,
-          "limit":6,
-          "picture":"big",
-          "fields":["description","author","claps","publishAt"],
-          "ratio":"landscape"
-        }
-      })
-    </script>
+    <div class="container-fluid info-box-news">
+      <h1 class="container-title"><i class="fas fa-newspaper"></i> Yattazan ニュース <i class="fas fa-newspaper"></i></h1>
+      <div id="medium-widget-mobile">
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget-mobile', params: {"resource":"https://medium.com/@yattazanenglishschool","postsPerLine":2,"limit":2,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+      </div>
+      <div id="medium-widget">
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@yattazanenglishschool","postsPerLine":3,"limit":3,"picture":"big","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+      </div>
+      
     </div>
   </section>
 
+
   <!-- Student Achievments -->
-  <section id="achievments">
+  <!-- sm: 540px, md: 720px, lg: 960px, xl: 1140px -->
+  <section id="achievements">
     <div class="container-fluid achieve">
-      <h1>２０２０年度 生徒達の実績</h1>
-      <h2><i class="eikentitle fas fa-crown crown-color"></i> 検定試験合格者 <i class="fas fa-crown crown-color"></i></h2>
+      <h1 class="container-title">２０２０年度 生徒達の実績</h1>
+      <h2 class="card-title"><i class="eikentitle fas fa-crown crown-color"></i> 検定試験合格者 <i class="fas fa-crown crown-color"></i></h2>
       <div class="row">
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">一級</h3>
               <h5 class="number-a-people">合格者１名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> H.U さん 那覇国際高３</p>
                 <!-- <p><i class="fas fa-award award"></i> Student Name</p>
@@ -163,12 +162,11 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">準一級</h3>
               <h5 class="number-a-people">合格者４名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> M.T さん 昭薬高２</p>
                 <p><i class="fas fa-award award"></i> M.H さん 興南高２</p>
@@ -184,12 +182,11 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">二級</h3>
               <h5 class="number-a-people">合格者１１名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> Y.U 君 仲西中１</p>
                 <p><i class="fas fa-award award"></i> S.Y 君 沖尚中３</p>
@@ -206,15 +203,11 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">準二級</h3>
               <h5 class="number-a-people">合格者１１名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> R.C 君 港川小５</p>
                 <p><i class="fas fa-award award"></i> M.K さん 琉附中２</p>
@@ -232,12 +225,11 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">三級</h3>
               <h5 class="number-a-people">合格者１６名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> R.K さん 琉附小２</p>
                 <p><i class="fas fa-award award"></i> M.N さん 浦西小６</p>
@@ -261,12 +253,11 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">四級</h3>
               <h5 class="number-a-people">合格者１３名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> K.O さん 嘉数小５</p>
                 <p><i class="fas fa-award award"></i> R.O さん 嘉数小５</p>
@@ -287,12 +278,11 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card card-a">
             <div class="card-a-body">
               <h3 class="card-title">五級</h3>
               <h5 class="number-a-people">合格者７名</h5>
-              <hr>
               <div class="scrollable">
                 <p><i class="fas fa-award award"></i> R.C さん 港川小３年</p>
                 <p><i class="fas fa-award award"></i> R.M さん 宮城小４年</p>
@@ -309,14 +299,14 @@
           </div>
         </div>
       </div>
+
       <div class="row">
-        <div class="col">
-          <h2><i class="upgrad fas fa-crown crown-color"></i> 大学合格者 <i class="fas fa-crown crown-color"></i></h2>
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+          <h2 class="card-title"><i class="upgrad fas fa-crown crown-color"></i> 大学合格者 <i class="fas fa-crown crown-color"></i></h2>
           <div class="card card-b">
             <div class="card-b-body">
               <h3 class="number-b-people">合格者７名</h3>
-              <hr>
-              <div class="scrollable scroll-body">
+              <div class="scrollable">
                 <p><i class="fas fa-graduation-cap"></i> K.S 君 東京農工大学</p>
                 <p><i class="fas fa-graduation-cap"></i> H.U さん 立命館大学</p>
                 <p><i class="fas fa-graduation-cap"></i> T.N 君 琉球大学</p>
@@ -328,13 +318,12 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <h2><i class="upgrad fas fa-crown crown-color"></i> 高等学校合格者 <i class="fas fa-crown crown-color"></i></h2>
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+          <h2 class="card-title"><i class="upgrad fas fa-crown crown-color"></i> 高等学校合格者 <i class="fas fa-crown crown-color"></i></h2>
           <div class="card card-b">
             <div class="card-b-body">
               <h3 class="number-b-people">合格者１３名</h3>
-              <hr>
-              <div class="scrollable scroll-body">
+              <div class="scrollable">
                 <p><i class="fas fa-graduation-cap"></i> H.H さん 那覇国際高校</p>
                 <p><i class="fas fa-graduation-cap"></i> T.I 君 那覇国際高校</p>
                 <p><i class="fas fa-graduation-cap"></i> R.M さん 那覇国際高校</p>
@@ -348,7 +337,6 @@
                 <p><i class="fas fa-graduation-cap"></i> F.M さん 那覇国際高校</p>
                 <p><i class="fas fa-graduation-cap"></i> K.M さん 浦添高校</p>
                 <p><i class="fas fa-graduation-cap"></i> J.K さん 那覇商業高校</p>
-
               </div>
             </div>
           </div>
@@ -360,96 +348,120 @@
   <!-- Reviews -->
   <section id="reviews">
     <!-- <h1 class="review-style">People's Reviews</h1> -->
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h4 class="review-text">
             私は小さい頃にディズニーチャンネルを見て外国の生活に憧れ、英語に興味を持ち、八田山に通い始めました。最初のうちは初めての英語に戸惑い、また英語を話すことを恥ずかしがってなかなか真剣に取り組むことが出来ませんでした。しかし、ナツコ先生の優しく分かりやすいご指導、ディーン先生のジョークたっぷりの英会話レッスンのおかげで塾に行くこと、英語を学ぶことが楽しくなり、継続できたおかげで英検も一級を取得しました。その他にも、県費留学の試験や大学の面接練習などにも対応して頂き、色々なチャンスを掴むこともできました。個人的にオススメなのは、英会話のレッスンと文法レッスンを両方取ることです！
           </h4>
-          <img class="review-img" src="images/hisane.jpg" alt="dog-profile">
-          <em>Hisaneちゃん、英検１級取得</em>
+          <img class="review-img" src="images/hisane.jpg" alt="hisane">
+          <em class="reviewer">Hisaneちゃん、英検１級取得</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">八田山には、小学生で5級にチャレンジした時から、1級の面接まで本当にお世話になりました。1級では英検CSEスコア上位3名に贈られる特別賞もいただき、現在は東京のK大学で帰国子女に揉まれながら頑張ってます。高校では先生達の熱心な指導のおかげでスピーチコンテストで1位を取ることもできました。長い間とても楽しく通学できました！ありがとうございます。これからもYattazan 応援しています！</h3>
+          <h4 class="review-text">
+            八田山には、小学生で5級にチャレンジした時から、1級の面接まで本当にお世話になりました。1級では英検CSEスコア上位3名に贈られる特別賞もいただき、現在は東京のK大学で帰国子女に揉まれながら頑張ってます。高校では先生達の熱心な指導のおかげでスピーチコンテストで1位を取ることもできました。長い間とても楽しく通学できました！ありがとうございます。これからもYattazan 応援しています！
+          </h4>
           <img class="review-img" src="images/km.jpg" alt="pic-profile">
-          <em>K.Mちゃん、英検１級取得</em>
+          <em class="reviewer">K.Mちゃん、英検１級取得</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">
-沖縄に転勤してきて英語教室を探していたところ、息子のお友達のお母さまから八田山英語学院を紹介していただきました。お月謝があまりにも低料金だったので初めは半信半疑でした。(先生スミマセン笑)
-楽しいレッスンに加え良心的な対応と指導に息子も英語が好きになり、６年で英検3級を取得することができました。転勤のため息子は小学生卒業とともに八田山も卒業となってしまったことが残念でなりません。
-先生は英検1級を取得していますし、保育園や他施設での英語指導や翻訳、通訳と幅広く活動されています。このような英語教室に出会えてとてもラッキーでした。ありがとうございました。</h3>
+          <h4 class="review-text">
+            沖縄に転勤してきて英語教室を探していたところ、息子のお友達のお母さまから八田山英語学院を紹介していただきました。お月謝があまりにも低料金だったので初めは半信半疑でした。(先生スミマセン笑)　楽しいレッスンに加え良心的な対応と指導に息子も英語が好きになり、６年で英検3級を取得することができました。転勤のため息子は小学生卒業とともに八田山も卒業となってしまったことが残念でなりません。先生は英検1級を取得していますし、保育園や他施設での英語指導や翻訳、通訳と幅広く活動されています。このような英語教室に出会えてとてもラッキーでした。ありがとうございました。
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>R.Sママ(小学３年〜６年通学)</em>
+          <em class="reviewer">R.Sママ(小学３年〜６年通学)</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">小学校２年生を通わせています。私(母)の仕事の都合で送迎ができないときでも振替レッスンをしていただけるのでとても助かっています。</h3>
+          <h4 class="review-text">
+            小学校２年生を通わせています。私(母)の仕事の都合で送迎ができないときでも振替レッスンをしていただけるのでとても助かっています。
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>生徒(小学２年生)の母</em>
+          <em class="reviewer">生徒(小学２年生)の母</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">小学校５年生の男の子がお世話になっています。D先生のエルモの物まね大好き☆それが楽しみで英語に行っているみたいです(笑）でもしっかり小４で英検４級取れました！</h3>
+          <h4 class="review-text">
+            小学校５年生の男の子がお世話になっています。D先生のエルモの物まね大好き☆それが楽しみで英語に行っているみたいです(笑）でもしっかり小４で英検４級取れました！
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>生徒(小学５年生)の母</em>
+          <em class="reviewer">生徒(小学５年生)の母</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">中２の女子です♪小学校の時から通っています。会話と英検の勉強をしています。レッスンとても楽しいです！でも、英検の先生、英検前はちょっとピリピリしているよ☆もっとリラックスしてね(笑)</h3>
+          <h4 class="review-text">
+            中２の女子です♪小学校の時から通っています。会話と英検の勉強をしています。レッスンとても楽しいです！でも、英検の先生、英検前はちょっとピリピリしているよ☆もっとリラックスしてね(笑)
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>中学２年生、生徒</em>
+          <em class="reviewer">中学２年生、生徒</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">いろいろ見てこの教室に決めたのは、長年続けている生徒が多いこと、小学校で多くの生徒が３級を、また多くの中学生が２級を取っているという平均的レベルが高いところがポイントとなりました。その子に合わせたペースとレッスン内容で進めているのが生徒が長続きする一番の理由ではないかと思いますよ。</h3>
+          <h4 class="review-text">
+            いろいろ見てこの教室に決めたのは、長年続けている生徒が多いこと、小学校で多くの生徒が３級を、また多くの中学生が２級を取っているという平均的レベルが高いところがポイントとなりました。その子に合わせたペースとレッスン内容で進めているのが生徒が長続きする一番の理由ではないかと思いますよ。
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>匿名</em>
+          <em class="reviewer">匿名</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">高校２年の女子です。小学校低学年のころから通っているので英語だけは学年でもトップレベルです♪アメリカンジョークも爆笑できるようになって嬉しいです。今は自分がアメリカンジョークをペラペラ言えるように練習中で～す！</h3>
+          <h4 class="review-text">
+            高校２年の女子です。小学校低学年のころから通っているので英語だけは学年でもトップレベルです♪アメリカンジョークも爆笑できるようになって嬉しいです。今は自分がアメリカンジョークをペラペラ言えるように練習中で～す！
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>高校２年生、生徒</em>
+          <em class="reviewer">高校２年生、生徒</em>
         </div>
         <div class="carousel-item">
-          <h2 class="review-text">中学生です♪会話のレッスンを受けていますが、学校のテスト前にはテスト範囲のプリントももらえるので助かってます！</h2>
+          <h4 class="review-text">
+            中学生です♪会話のレッスンを受けていますが、学校のテスト前にはテスト範囲のプリントももらえるので助かってます！
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>中学生、生徒</em>
+          <em class="reviewer">中学生、生徒</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">社会人です。会話の先生はアメリカ出身ですが沖縄や日本のことをよく理解していてユーモアもあり話しがとてもはずみます。少人数なので質問もしやすいです。</h3>
+          <h4 class="review-text">
+            社会人です。会話の先生はアメリカ出身ですが沖縄や日本のことをよく理解していてユーモアもあり話しがとてもはずみます。少人数なので質問もしやすいです。
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>社会人、生徒</em>
+          <em class="reviewer">社会人、生徒</em>
         </div>
         <div class="carousel-item">
-          <h3 class="review-text">中学生です。英検＆会話のレッスン受けています。学校のテスト前はテスト対策のお勉強を時間外でやってもらっているので学校の英語もバッチリです！早く2級取れるようにがんばりま～す。</h3>
+          <h4 class="review-text">
+            中学生です。英検＆会話のレッスン受けています。学校のテスト前はテスト対策のお勉強を時間外でやってもらっているので学校の英語もバッチリです！早く2級取れるようにがんばりま～す。
+          </h4>
           <img class="review-img" src="images/reviewimg.jpg" alt="lady-profile">
-          <em>中学生、生徒</em>
+          <em class="reviewer">中学生、生徒</em>
         </div>
       </div>
+
       <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
       </a>
       <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
       </a>
+
     </div>
   </section>
 
   <!-- Classes -->
   <section id="class-menu">
-    <h1 class="class-title">レッスンのご案内</h1>
+    <h1 class="container-title">レッスンのご案内</h1>
     <div class="container-fluid">
 
       <div class="tab">
-        <button class="tablinks" onclick="openClass(event, 'Kids')">キッズクラス</button>
+        <button class="tablinks active" onclick="openClass(event, 'Kids')">キッズクラス</button>
         <button class="tablinks" onclick="openClass(event, 'Grammar')">文法クラス</button>
         <button class="tablinks" onclick="openClass(event, 'Eiken')">英検クラス</button>
         <button class="tablinks" onclick="openClass(event, 'Eikaiwa')">英会話クラス</button>
         <button class="tablinks" onclick="openClass(event, 'Otherlesson')">その他のレッスン</button>
+      </div>
 
+      <div class="tab-mobile">
+        <button class="tablinks active" onclick="openClass(event, 'Kids')">キッズ</button>
+        <button class="tablinks" onclick="openClass(event, 'Grammar')">文法</button>
+        <button class="tablinks" onclick="openClass(event, 'Eiken')">英検</button>
+        <button class="tablinks" onclick="openClass(event, 'Eikaiwa')">英会話</button>
+        <button class="tablinks" onclick="openClass(event, 'Otherlesson')">その他</button>
       </div>
 
       <div id="Kids" class="tabcontent">
-        <h2>キッズクラス</h2>
+        <h2 class="tab-class-title">キッズクラス</h2>
         <hr>
         <img class="lesson-img" src="images/kids.png" alt="kids-class-img">
         <p class="menu-text">対象　小学生　(クラスに対応できる場合は年長生から受け入れ)</p>
@@ -457,7 +469,7 @@
       </div>
 
       <div id="Grammar" class="tabcontent" style="display:none">
-        <h2>文法クラス</h2>
+        <h2 class="tab-class-title">文法クラス</h2>
         <hr>
         <img class="lesson-img" src="images/bunpou.png" alt="bunpou-class-img">
         <p class="menu-text">対象　中学生以上</p>
@@ -465,7 +477,7 @@
       </div>
 
       <div id="Eiken" class="tabcontent" style="display:none">
-        <h2>英検クラス</h2>
+        <h2 class="tab-class-title">英検クラス</h2>
         <hr>
         <img class="lesson-img" src="images/eiken.png" alt="eiken-class-img">
         <p class="menu-text">対象　中学生以上(小学生の英検対策はキッズクラスの時間帯で対応)</p>
@@ -474,7 +486,7 @@
       </div>
 
       <div id="Eikaiwa" class="tabcontent" style="display:none">
-        <h2>英会話クラス</h2>
+        <h2 class="tab-class-title">英会話クラス</h2>
         <hr>
         <img class="lesson-img" src="images/eikaiwa.png" alt="eikaiwa-class-img">
         <p class="menu-text">対象　中学生以上</p>
@@ -482,7 +494,7 @@
       </div>
 
       <div id="Otherlesson" class="tabcontent" style="display:none">
-        <h2>その他のレッスン</h2>
+        <h2 class="tab-class-title">その他のレッスン</h2>
         <hr>
         <img class="lesson-img" src="images/sonota2.png" alt="sonota-class-img">
         <p class="menu-text">高校入試対策・センター試験対策・英検直前対策・英検2次試験対策・留学直前対策・出張英語レッスン・Skypeまたはフェイスタイムでのオンラインレッスンなど、 短期のレッスンも受け付けます。お気軽に ご相談ください。</p>
@@ -555,23 +567,10 @@
   </section> -->
   <section id="price">
     <div class="container-fluid info-box">
+      <h1 class="container-title">クラス料金</h1>
+      <h4>１レッスン５５分</h4>
+      <h4>会話のレッスンと英検のレッスンの組み合わせが可能</h4>
       <div id="generic_price_table">
-        <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <!--PRICE HEADING START-->
-                <div class="price-heading clearfix">
-                  <h1>クラス料金</h1>
-                  <h4>１レッスン５５分</h4>
-                  <h4>会話のレッスンと英検のレッスンの組み合わせが可能</h4>
-                </div>
-
-                <!--//PRICE HEADING END-->
-              </div>
-            </div>
-          </div>
-          <div class="container">
 
             <!--BLOCK ROW START-->
             <div class="row">
@@ -834,21 +833,10 @@
 
           </div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <!--PRICE HEADING START-->
-                <div class="translation-heading clearfix">
-                  <h1>翻訳料金</h1>
+            <h1 class="container-title">翻訳料金</h1>
                   <h4>料金はあくまで目安です。無料でお見積りいたしますのでご連絡ください。</h4>
                   <h4>翻訳内容、時期によってはお引き受けできない場合がございます。ご了承ください。</h4>
-                </div>
-
-                <!--//PRICE HEADING END-->
-              </div>
-            </div>
-          </div>
-          <div class="container">
+            <div id="generic_price_table">
 
             <!--BLOCK ROW START-->
             <div class="row">
@@ -957,10 +945,12 @@
                 <!--//PRICE CONTENT END-->
 
               </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        </section>
-        <footer>
-        </footer>
+
       </div>
 
     </div>
@@ -969,7 +959,7 @@
   <!-- Translation Services -->
   <section id="translation">
     <div class="container-fluid info-box">
-      <h1>翻訳業務</h1>
+      <h1 class="container-title">翻訳業務</h1>
 
       <p class="translation-menu">ビジネス文書(契約書・会社パンフレット・広告・取引文書・レストランメニューなど)</p>
       <p class="translation-menu">一般文書(手紙・メール文書・履歴書・留学先への書類など)</p>
