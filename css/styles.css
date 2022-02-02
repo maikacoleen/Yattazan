@@ -112,13 +112,18 @@ rt{
 
 }
 
-#medium-widget{
+.blogimg{
+  height: 70%;
+  width: 70%;
+}
+
+/* #medium-widget{
   display: auto;
 }
 
 #medium-widget-mobile{
   display: none;
-}
+} */
 
 
 .info-box{
@@ -127,7 +132,7 @@ rt{
 }
 
 .info-box-news{
-  padding: 5% 10% 10% 10%;
+  padding: 7% 10% 5% 10%;
   text-align: center;
 }
 
@@ -918,7 +923,7 @@ h1{
     font-size: 150%;
     padding: 4px 5px 4px 5px;
   }
-  
+
   /* Background Images */
   #about{
     background-image: none
@@ -1086,4 +1091,3 @@ h1{
   }
 
 }
-  
