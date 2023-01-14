@@ -964,18 +964,30 @@ h1{
     font-size: 150%;
   }
 
-  /* News */
+  /* News/Blog */
   .info-box-news{
-    padding: 20px 15px 20px 15px;
+    padding: 40px 0px 40px 0px;
   }
 
-  #medium-widget{
+  .blogimg{
+    width: 90%;
+  }
+
+  .blog-medium-button{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .blog-insta-button{
+    margin: 10px 0px 0px 0px;
+  }
+
+  /* #medium-widget{
     display: none;
   }
 
   #medium-widget-mobile{
     display: initial;
-  }
+  } */
 
   /* Achievements */
   .achieve{
